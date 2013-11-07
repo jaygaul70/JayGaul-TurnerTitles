@@ -1,0 +1,112 @@
+﻿@model TitlesModel.MovieTitlesPagedModel
+
+@{
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+    //WebGrid grid = new WebGrid(rowsPerPage: Model.PageSize);
+    //grid.Bind(Model.MovieTitles, autoSortAndPage: false, rowCount: Model.TotalRows );
+}
+
+<div id="dialog-view"></div>
+
+<h2>Movie Titles</h2>
+
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            /*
+            $(".viewLink").on("click", function (e) {
+                var url = $(this).prop('href');
+                var tid = $(this).attr('data-id');
+                alert(tid);
+                $("#dialog-view").dialog({
+                    title: 'View Movie Details',
+                    autoOpen: false,
+                    resizable: false,
+                    height: 400,
+                    width: 600,
+                    show: { effect: 'drop', direction: "up" },
+                    modal: true,
+                    draggable: false,
+                    open: function (event, ui) {
+                        $(this).load(url);
+                    },
+                    buttons: {
+                        "Close": function () {
+                            $(this).dialog('close');
+                        }
+                    }
+                });
+
+                $("#dialog").dialog('open');
+                return false;
+            });
+
+            $("#languageDrop").change(function () {
+                var self = $(this);
+                var storyId = self.val();
+                //var form = self.closest.form();
+                var urll = "/Title/GetStoryline/" + storyId;
+                $.ajax({
+                    url: urll,
+                    type: 'POST',
+                    success: function (data) {
+                        if (data.success == true) {
+                            $("#languageStory").val(data.story);
+                        }
+                    }
+                });
+            });
+        });
+        
+    </script>
+
+}
+
+
+
+<!--grid.GetHtml(
+ fillEmptyRows: false,
+ alternatingRowStyle: "alternate-row",
+ headerStyle: "grid-header",
+ footerStyle: "grid-footer",
+ mode: WebGridPagerModes.All,
+ firstText: "<< First",
+ previousText: "< Prev",
+ nextText: "Next >",
+ lastText: "Last >>",
+ columns: new[] { grid.Column("TitleId", header: "ID", canSort: false),
+ grid.Column("TitleName", header: "TitleName", format: $<text>
+ $Html.ActionLink((string)item.Name, "View", new { id = item.TitleId }, new { $class = "viewDialog" })</text> ),
+ grid.Column("ReleaseDate", header: "Release Date", canSort: true) }
+ );
+ -->
+
+
+ @using (Ajax.BeginForm(new AjaxOptions
+ {
+     HttpMethod = "Post",
+     InsertionMode = InsertionMode.Replace,
+     UpdateTargetId = "movieList"
+ }))
+ {
+    @Html.Label("Search By Title:")
+    @Html.TextBox("searchString", "", new { width = "200px" });
+    <input class="button" type="submit" value="Search" />                                                   
+                                                            
+ }
+          
+<br />
+<div class="movieList">
+    @Html.Partial("_TitleSearchPartial", Model.MovieTitles)
+</div>
+
+
+

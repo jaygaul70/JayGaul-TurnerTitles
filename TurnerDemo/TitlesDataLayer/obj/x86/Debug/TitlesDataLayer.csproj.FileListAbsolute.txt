@@ -1,0 +1,10 @@
+C:\dev\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.csprojResolveAssemblyReference.cache
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesDataLayer.dll.config
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesDataLayer.dll
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesDataLayer.pdb
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\EntityFramework.dll
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesModel.dll
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesModel.pdb
+C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\EntityFramework.xml
+C:\dev\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.dll
+C:\dev\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.pdb

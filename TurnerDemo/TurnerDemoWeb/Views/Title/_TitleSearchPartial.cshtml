@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MovieTitle>
+
+
+    <fieldset>
+        <legend>Movie Titles</legend>
+        <table width="100%">
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Released
+                </th>
+            </tr>
+            @foreach (MovieTitle m in Model)
+            {
+                <tr>            
+                    <td>
+                        <!--Html.ActionLink(m.TitleName, "View", new { id = m.TitleId }, new { $class = "viewLink", data_id = m.TitleId })-->
+                        @Html.ActionLink(m.TitleName, "ViewMovie", new { id = m.TitleId })
+                    </td>
+                    <td>
+                        @m.ReleaseYear
+                    </td>
+                </tr>
+                }                        
+        </table>
+    </fieldset>

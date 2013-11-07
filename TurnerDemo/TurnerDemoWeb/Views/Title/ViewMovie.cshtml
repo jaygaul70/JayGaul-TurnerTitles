@@ -1,0 +1,34 @@
+﻿@model TitlesModel.MovieDetailsModel
+
+@{
+    ViewBag.Title = "ViewMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.ActionLink("<< Back to Search", "Index", "Title")
+
+@Html.Partial("_MovieDetailsPartial", Model)
+<br />
+
+<h3>Actors</h3>
+<table width="50%">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Role
+        </th>
+    </tr>
+    @foreach (ActorModel am in Model.Actors)
+    {
+        <tr>            
+            <td>
+                @am.Name
+            </td>
+            <td>
+                @am.RoleType
+            </td>
+        </tr>
+        }                        
+</table>

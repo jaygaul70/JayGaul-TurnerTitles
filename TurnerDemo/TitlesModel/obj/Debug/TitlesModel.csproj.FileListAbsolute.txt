@@ -1,0 +1,4 @@
+C:\dev\TurnerDemo\TitlesModel\bin\Debug\TitlesModel.dll
+C:\dev\TurnerDemo\TitlesModel\bin\Debug\TitlesModel.pdb
+C:\dev\TurnerDemo\TitlesModel\obj\Debug\TitlesModel.dll
+C:\dev\TurnerDemo\TitlesModel\obj\Debug\TitlesModel.pdb

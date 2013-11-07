@@ -1,0 +1,11 @@
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\TurnerDemoWeb.dll
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\TurnerDemoWeb.pdb
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\TitlesDataLayer.dll
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\TitlesModel.dll
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\EntityFramework.dll
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\TitlesDataLayer.pdb
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\TitlesModel.pdb
+C:\dev\TurnerDemo\TurnerDemoWeb\bin\EntityFramework.xml
+C:\dev\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.csprojResolveAssemblyReference.cache
+C:\dev\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.dll
+C:\dev\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.pdb

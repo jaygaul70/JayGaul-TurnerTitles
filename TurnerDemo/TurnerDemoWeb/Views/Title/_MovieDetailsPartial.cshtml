@@ -1,0 +1,32 @@
+﻿@model TitlesModel.MovieDetailsModel
+
+<div class="dialog-container">
+
+    <div id="movieDiv">
+        <fieldset>
+            <h3>@Model.TitleName (@Model.ReleaseYear)</h3>
+            <!--Html.LabelFor(m => m.ReleaseYear)-->
+            <br />
+
+            <div class="fieldContainer">
+                <div class="displayLabel">
+                    @Html.Label("Storyline Language:")
+                </div>
+                <div class="displayField">
+                    @Html.DropDownList("id", new SelectList(Model.Storylines, "id", "Language"))
+                </div>
+            </div>
+            @using (Html.BeginForm())
+            {
+                <div class="displayLabel">
+                    @Html.Label("Storyline:")
+                </div>
+                <div class="displayField">
+                    @Html.DisplayText("languageStory")
+                </div>
+            }
+
+        </fieldset>
+    </div>
+
+</div>
