@@ -1,0 +1,75 @@
+﻿@model TitlesModel.MovieDetailsModel
+
+    <div id="movieDiv">
+    <div data-ng-app="MovieModule">
+            <div class="row">
+                <div class="col-12">
+                    <h3>@Model.TitleName (@Model.ReleaseYear)</h3>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-6">
+                    <form name="mainform" data-ng-submit="sendForm()" data-ng-controller="MovieController" novalidate>
+                        @Html.HiddenFor(m => m.TitleId, new { data_ng_model = "titleId" } )
+                        <div class="fieldContainer">
+                            <div class="displayLabel">
+                                @Html.Label("Storyline Type:")
+                            </div>
+                        
+                            <div class="displayField">
+                                @Html.DropDownList("storyDrop", new SelectList(Model.Storylines, "slid", "StoryType"), new { data_ng_model = "storytype", data_ng_change = "GetStory()" })
+                            </div>
+                            <div class="displayField">
+                                <select data-ng-model="storytypeng" data-ng-options="st.slid as sl.StoryType for st in storytypes" data-ng-change="GetStoryline()"></select>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="displayLabel">
+                            @Html.Label("Storyline:")
+                        </div>
+                        <div class="displayField">
+                            <p>{{storyline}}</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    @Html.Partial("_GenresPartial", Model.Genres)
+                </div>
+
+            </div>
+        </div>
+   
+
+        <div class="row">
+            <div class="col-2">
+                <h3>Actors</h3>
+                <table>
+                    @foreach (ActorModel am in Model.Actors)
+                    {
+                        <tr>            
+                            <td>
+                                @am.Name
+                            </td>
+                        </tr>
+                        }                        
+                </table>
+            </div>
+            <div class="col-4">
+                <h3>Off-screen Participants</h3>
+                <table>
+                    @foreach (ParticipantModel am in Model.Participants)
+                    {
+                        <tr>            
+                            <td>
+                                @am.Name
+                            </td>
+                            <td>
+                                @am.RoleType
+                            </td>
+                        </tr>
+                    }                        
+                </table>
+            </div>
+        </div>
+
+    </div>

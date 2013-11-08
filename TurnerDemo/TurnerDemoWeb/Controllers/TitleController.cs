@@ -35,7 +35,7 @@ namespace TurnerDemoWeb.Controllers
             return View(m);
         }
 
-        public ActionResult View(int id)
+        public ActionResult ViewPartial(int id)
         {
             MovieDetailsModel m = th.GetMovieDetails(id);
             return PartialView("_MovieDetailsPartial", m);
@@ -47,9 +47,22 @@ namespace TurnerDemoWeb.Controllers
             return View(m);
         }
 
+        public ActionResult View(int id)
+        {
+            MovieDetailsModel m = th.GetMovieDetails(id);
+            return View(m);
+        }
+
+        public JsonResult GetStoryTypes(int id)
+        {
+            List<StorylineModel> types = th.GetStoryTypes(id);
+            return Json(types, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
         public JsonResult GetStoryline(int storyId)
         {
-            return Json(new { story = th.GetStoryline(storyId) });
+            return Json(new { story = th.GetStoryline(storyId) }, JsonRequestBehavior.AllowGet);
 
         }
 

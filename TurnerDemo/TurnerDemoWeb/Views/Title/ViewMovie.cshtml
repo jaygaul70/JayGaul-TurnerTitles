@@ -5,30 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/angular.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/ViewMovie.js")" type="text/javascript"></script>
+}
+
+
+
 @Html.ActionLink("<< Back to Search", "Index", "Title")
 
-@Html.Partial("_MovieDetailsPartial", Model)
-<br />
-
-<h3>Actors</h3>
-<table width="50%">
-    <tr>
-        <th>
-            Name
-        </th>
-        <th>
-            Role
-        </th>
-    </tr>
-    @foreach (ActorModel am in Model.Actors)
-    {
-        <tr>            
-            <td>
-                @am.Name
-            </td>
-            <td>
-                @am.RoleType
-            </td>
-        </tr>
-        }                        
-</table>
+@Html.Partial("_MovieAngularPartial", Model)

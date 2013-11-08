@@ -1,0 +1,40 @@
+﻿@model TitlesModel.MovieDetailsModel
+
+@{
+    ViewBag.Title = "ViewMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#storyDrop").change(function () {
+                var self = $(this);
+                var storyId = self.val();
+                alert(storyId);
+                //var form = self.closest.form();
+                var urll = "/Title/GetStoryline/" + storyId;
+                alert(urll);
+                $.ajax({
+                    url: urll,
+                    type: 'GET',
+                    success: function (data) {
+                        if (data.success == true) {
+                            alert('success');
+                            $("#storyline").val(data.story);
+                        }
+                        else {
+                            alert('error');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+}
+
+@Html.ActionLink("<< Back to Search", "Index", "Title")
+
+@Html.Partial("_MovieDetailsPartial", Model)

@@ -1,0 +1,21 @@
+﻿@using System.Text;
+@model IEnumerable<MovieGenre>
+           
+@functions {
+    private string genres
+    {
+        get {
+            StringBuilder sb = new StringBuilder(" ");
+            foreach (var g in Model)
+            {
+                sb.Append(g.Name + ", ");
+            }
+            if (sb.Length > 2) return sb.ToString().Substring(0, sb.ToString().Length - 2);
+            else return "";
+        }
+    }
+        
+}
+
+<h6>@Html.Raw("Genres:" + genres)</h6>
+

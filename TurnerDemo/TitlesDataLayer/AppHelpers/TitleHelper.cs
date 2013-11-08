@@ -20,6 +20,11 @@ namespace TitlesDataLayer.AppHelpers
             return _titlebll.GetMovieDetails(id);
         }
 
+        public List<StorylineModel> GetStoryTypes(int titleId)
+        {
+            return _titlebll.GetStoryTypes(titleId);
+        }
+
         public string GetStoryline(int storyId)
         {
             return _titlebll.GetStoryline(storyId);

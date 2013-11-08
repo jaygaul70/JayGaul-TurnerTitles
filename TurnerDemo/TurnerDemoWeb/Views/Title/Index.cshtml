@@ -21,7 +21,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            /*
+            
             $(".viewLink").on("click", function (e) {
                 var url = $(this).prop('href');
                 var tid = $(this).attr('data-id');
@@ -56,7 +56,7 @@
                 var urll = "/Title/GetStoryline/" + storyId;
                 $.ajax({
                     url: urll,
-                    type: 'POST',
+                    type: 'GET',
                     success: function (data) {
                         if (data.success == true) {
                             $("#languageStory").val(data.story);

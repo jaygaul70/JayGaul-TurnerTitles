@@ -180,7 +180,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TitlesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-        <EntityContainer Name="TitlesEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="TitlesEntities" annotation:LazyLoadingEnabled="false">
           <EntitySet Name="Genres" EntityType="TitlesModel.Genre" />
           <EntitySet Name="Titles" EntityType="TitlesModel.Title" />
           <EntitySet Name="TitleGenres" EntityType="TitlesModel.TitleGenre" />
@@ -484,7 +484,7 @@
           <ConnectorPoint PointX="3" PointY="7.4369926875" />
         </AssociationConnector>
         <EntityTypeShape EntityType="TitlesModel.Award" Width="1.5" PointX="5.125" PointY="0.5" Height="2.3648893229166656" />
-        <EntityTypeShape EntityType="TitlesModel.Participant" Width="1.5" PointX="2.875" PointY="8.875" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="TitlesModel.Participant" Width="1.5" PointX="2.875" PointY="9.375" Height="1.7879850260416674" />
         <EntityTypeShape EntityType="TitlesModel.StoryLine" Width="1.5" PointX="5.125" PointY="11.625" Height="2.1725878906249996" />
         <AssociationConnector Association="TitlesModel.Award_FK_Award_Title" >
           <ConnectorPoint PointX="2.25" PointY="5.3026432291666659" />
@@ -492,7 +492,7 @@
           <ConnectorPoint PointX="5.875" PointY="2.8648893229166656" />
         </AssociationConnector>
         <AssociationConnector Association="TitlesModel.TitleParticipant_FK_TitleParticipant_Participant" >
-          <ConnectorPoint PointX="3.6875" PointY="8.875" />
+          <ConnectorPoint PointX="3.6875" PointY="9.375" />
           <ConnectorPoint PointX="3.6875" PointY="8.6821907552083335" />
         </AssociationConnector>
         <AssociationConnector Association="TitlesModel.StoryLine_FK_StoryLine_Title" >

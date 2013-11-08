@@ -53,8 +53,8 @@ namespace TitlesModel
 
     public class StorylineModel
     {
-        public int id { get; set; }
-        public string Language { get; set; }
+        public int slid { get; set; }
+        public string StoryType { get; set; }
         //public string Story { get; set; }
     }
 

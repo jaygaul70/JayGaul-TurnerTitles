@@ -1,32 +1,56 @@
 ﻿@model TitlesModel.MovieDetailsModel
 
 <div class="dialog-container">
+        <div id="movieDiv">
+            <fieldset>
+                <h3>@Model.TitleName (@Model.ReleaseYear)</h3>
+                <!--Html.LabelFor(m => m.ReleaseYear)-->
+                <br />
+                @using (Html.BeginForm())
+                {
+                    <div class="fieldContainer">
+                        <div class="displayLabel">
+                            @Html.Label("Storyline Type:")
+                        </div>
+                        <div class="displayField">
+                            @Html.DropDownList("storyDrop", new SelectList(Model.Storylines, "slid", "StoryType"))
+                        </div>
+                    </div>
+                
+                    <div class="displayLabel">
+                        @Html.Label("Storyline:")
+                    </div>
+                    <div class="displayField">
+                        @Html.DisplayText("storyline")
+                    </div>
+                }
 
-    <div id="movieDiv">
-        <fieldset>
-            <h3>@Model.TitleName (@Model.ReleaseYear)</h3>
-            <!--Html.LabelFor(m => m.ReleaseYear)-->
-            <br />
-
-            <div class="fieldContainer">
-                <div class="displayLabel">
-                    @Html.Label("Storyline Language:")
-                </div>
-                <div class="displayField">
-                    @Html.DropDownList("id", new SelectList(Model.Storylines, "id", "Language"))
-                </div>
-            </div>
-            @using (Html.BeginForm())
-            {
-                <div class="displayLabel">
-                    @Html.Label("Storyline:")
-                </div>
-                <div class="displayField">
-                    @Html.DisplayText("languageStory")
-                </div>
-            }
-
-        </fieldset>
+            </fieldset>
+        </div>
     </div>
+    <br />
+
+    <h3>Actors</h3>
+    <table width="50%">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Role
+            </th>
+        </tr>
+        @foreach (ActorModel am in Model.Actors)
+        {
+            <tr>            
+                <td>
+                    @am.Name
+                </td>
+                <td>
+                    @am.RoleType
+                </td>
+            </tr>
+            }                        
+    </table>
 
 </div>

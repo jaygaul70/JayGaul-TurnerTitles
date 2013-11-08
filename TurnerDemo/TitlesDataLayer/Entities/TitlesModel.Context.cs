@@ -18,6 +18,7 @@ namespace TitlesDataLayer.Entities
         public TitlesEntities()
             : base("name=TitlesEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
