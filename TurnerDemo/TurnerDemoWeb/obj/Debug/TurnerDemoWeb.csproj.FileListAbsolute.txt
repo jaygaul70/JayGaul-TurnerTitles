@@ -9,3 +9,14 @@ C:\dev\TurnerDemo\TurnerDemoWeb\bin\EntityFramework.xml
 C:\dev\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.csprojResolveAssemblyReference.cache
 C:\dev\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.dll
 C:\dev\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\TurnerDemoWeb.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\TurnerDemoWeb.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\TitlesDataLayer.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\TitlesModel.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\EntityFramework.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\TitlesDataLayer.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\TitlesModel.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\bin\EntityFramework.xml
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.csprojResolveAssemblyReference.cache
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TurnerDemoWeb\obj\Debug\TurnerDemoWeb.pdb

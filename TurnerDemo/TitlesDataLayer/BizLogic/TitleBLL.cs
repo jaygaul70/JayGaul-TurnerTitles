@@ -47,6 +47,9 @@ namespace TitlesDataLayer.BizLogic
             m.Participants = new List<ParticipantModel>();
             t.TitleParticipants.Where(f => f.RoleType != "Actor").ToList().ForEach(tp => m.Participants.Add(new ParticipantModel { Name = tp.Participant.Name, RoleType = tp.RoleType }));
 
+            m.Actors = m.Actors.OrderBy(s => s.Name).ToList();
+            m.Participants = m.Participants.OrderBy(s => s.Name).ToList();
+
             return m;
         }
 

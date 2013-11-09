@@ -8,3 +8,13 @@ C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesModel.pdb
 C:\dev\TurnerDemo\TitlesDataLayer\bin\Debug\EntityFramework.xml
 C:\dev\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.dll
 C:\dev\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesDataLayer.dll.config
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesDataLayer.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesDataLayer.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesModel.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\TitlesModel.pdb
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.dll
+C:\Users\Jason\JayGaul-TurnerTitles\TurnerDemo\TitlesDataLayer\obj\x86\Debug\TitlesDataLayer.pdb
