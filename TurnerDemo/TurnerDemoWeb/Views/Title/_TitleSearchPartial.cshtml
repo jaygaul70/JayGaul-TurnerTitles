@@ -16,8 +16,8 @@
             {
                 <tr>            
                     <td>
-                        <!--Html.ActionLink(m.TitleName, "View", new { id = m.TitleId }, new { $class = "viewLink", data_id = m.TitleId })-->
-                        @Html.ActionLink(m.TitleName, "ViewMovie", new { id = m.TitleId })
+                        <!--Html.ActionLink(m.TitleName, "ViewPartial", new { id = m.TitleId }, new { $class = "viewLink" })-->
+                        <@Html.ActionLink(m.TitleName, "ViewMovie", new { id = m.TitleId} )
                     </td>
                     <td>
                         @m.ReleaseYear

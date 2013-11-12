@@ -13,7 +13,7 @@
                             @Html.Label("Storyline Type:")
                         </div>
                         <div class="displayField">
-                            @Html.DropDownList("storyDrop", new SelectList(Model.Storylines, "slid", "StoryType"))
+                            @Html.DropDownList("storyDrop", new SelectList(Model.Storylines, "slid", "StoryType"), new { id = "storyDrop" })
                         </div>
                     </div>
                 

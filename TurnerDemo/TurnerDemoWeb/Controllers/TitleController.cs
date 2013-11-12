@@ -17,7 +17,7 @@ namespace TurnerDemoWeb.Controllers
         public ActionResult Index()
         {
             MovieTitlesPagedModel m = new MovieTitlesPagedModel();
-            m.MovieTitles = th.SearchMovies("", 0, 25);
+            m.MovieTitles = th.SearchTitles("", 0, 25);
             return View(m);
         }
 
@@ -26,12 +26,12 @@ namespace TurnerDemoWeb.Controllers
         {
             if (Request.IsAjaxRequest())
             {
-                List<MovieTitle> movies = th.SearchMovies(searchString, 0, 25);
+                List<MovieTitle> movies = th.SearchTitles(searchString, 0, 25);
                 return PartialView("_TitleSearchPartial", movies);
             }
 
             MovieTitlesPagedModel m = new MovieTitlesPagedModel();
-            m.MovieTitles = th.SearchMovies(searchString, 0, 25);
+            m.MovieTitles = th.SearchTitles(searchString, 0, 25);
             return View(m);
         }
 

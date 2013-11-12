@@ -16,7 +16,7 @@ namespace TitlesDataLayer.BizLogic
             
         }
 
-        public List<MovieTitle> SearchMovies(string titleString, int pageStart, int pageSize)
+        public List<MovieTitle> SearchTitles(string titleString, int pageStart, int pageSize)
         {
             var m = from t in db.Titles.Where(f => f.TitleName.StartsWith(titleString) || titleString == "" ).OrderBy(s => s.TitleNameSortable)
                          select new MovieTitle

@@ -10,9 +10,9 @@ namespace TitlesDataLayer.AppHelpers
     public class TitleHelper
     {
         private TitleBLL _titlebll = new TitleBLL();
-        public List<MovieTitle> SearchMovies(string titleString, int pageStart, int pageSize)
+        public List<MovieTitle> SearchTitles(string titleString, int pageStart, int pageSize)
         {
-            return _titlebll.SearchMovies(titleString, pageStart, pageSize);
+            return _titlebll.SearchTitles(titleString, pageStart, pageSize);
         }
 
         public MovieDetailsModel GetMovieDetails(int id)

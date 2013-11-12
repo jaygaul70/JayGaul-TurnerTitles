@@ -7,8 +7,8 @@ app.controller('MovieController', function ($scope, $http) {
 
     function GetStoryTypes() {
         alert('getstorytypes');
-        var titleId = $scope.titleId;
-        var urll = '/Title/GetStoryTypes/' + titleId;
+        var titleid = $scope.titleId;
+        var urll = '/Title/GetStoryTypes/' + titleid;
         if (titleid) {
             $http({
                 method: 'GET',
